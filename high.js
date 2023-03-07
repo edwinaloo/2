@@ -1,5 +1,6 @@
-const score = prompt("Enter a score: ");
-function calculateGrade(score){
+
+function calculateGrade(){
+var score = prompt("Enter a score: ");
 
 if (score >= 80 && score <= 100) {
   console.log("Grade: A");
@@ -15,4 +16,6 @@ if (score >= 80 && score <= 100) {
   console.log("Invalid score.");
 }
 }
-document.getElementById("demo").innerHTML = calculateGrade(score)
+let finalGrade = calculateGrade;
+console.log(finalGrade);
+document.getElementById("grading").innerHTML = calculateGrade;
